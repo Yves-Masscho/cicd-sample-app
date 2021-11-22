@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+
+docker exec jenkins_server rm -rfv /var/jenkins_home/workspace/BuildTheSampleApp/tempdir/
 mkdir tempdir
 mkdir tempdir/templates
 mkdir tempdir/static
